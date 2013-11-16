@@ -24,8 +24,5 @@
   <ItemGroup>
     <Compile Include="Waves.py" />
   </ItemGroup>
-  <ItemGroup>
-    <Content Include="README.txt" />
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" />
 </Project>
