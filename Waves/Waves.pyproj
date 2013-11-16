@@ -22,7 +22,21 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="forms\main_window_ui.py" />
+    <Compile Include="forms\__init__.py" />
+    <Compile Include="gui\main_window.py" />
+    <Compile Include="scr_compileForms.py" />
+    <Compile Include="gui\__init__.py" />
+    <Compile Include="misc.py" />
     <Compile Include="Waves.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="forms\" />
+    <Folder Include="gui\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="forms\main_window.ui" />
+    <Content Include="forms\style.css" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" />
 </Project>

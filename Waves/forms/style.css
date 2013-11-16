@@ -1,0 +1,94 @@
+
+/* Application-wide properties*/
+* {
+    background-color: #dcd8d1;
+    color: black;
+    font-size: 12pt;
+}
+
+QMenuBar {
+}
+
+    QMenuBar::item {
+        spacing: 3px; /* spacing between menu bar items */
+        padding: 7px 12px;
+        background: transparent;
+    }
+
+        QMenuBar::item:selected { /* when selected using mouse or keyboard */
+            background: #00caab;
+        }
+
+        QMenuBar::item:pressed {
+            background: #00caab;
+        }
+
+QMenu {
+    margin: 0px; /* some spacing around the menu */
+}
+
+    QMenu::item {
+        padding: 12px 24px;
+        background: #00caab;
+    }
+
+        QMenu::item:selected {
+            background: #1ef8ff;
+            color: black;
+        }
+
+    QMenu::separator {
+        height: 1px;
+        background: white;
+    }
+
+    QMenu::indicator {
+        width: 13px;
+        height: 13px;
+    }
+
+
+/* Actual controls*/
+
+QLabel {
+}
+
+QPushButton {
+    background-color: #0094ff;
+    border: none;
+    padding: 10px 20px;
+}
+
+    QPushButton:hover {
+        background-color: #00c8ff;
+    }
+
+    QPushButton:pressed {
+        background-color: #00de0b;
+    }
+
+QLineEdit {
+    background-color: #aaaaaa;
+    color: black;
+    border: none;
+    padding: 7px 10px;
+}
+
+QLineEdit:focus {
+    background-color: #0094ff;
+    color: white;
+}
+
+QSlider::groove:horizontal {
+    border: none;
+    height: 2px; /* the groove expands to the size of the slider by default. by giving it a height, it has a fixed size */
+    background-color: #0094ff;
+    margin: 2px 0;
+}
+
+QSlider::handle:horizontal {
+    background-color: #00de0b;
+    width: 20px;
+    margin: -10px 0; /* handle is placed by default on the contents rect of the groove. Expand outside the groove */
+    border-radius: 3px;
+}
