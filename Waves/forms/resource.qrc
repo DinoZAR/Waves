@@ -1,0 +1,9 @@
+<RCC>
+  <qresource prefix="/">
+    <file>icons/check_empty.png</file>
+    <file>icons/check_full.png</file>
+    <file>icons/Command-Redo-48.png</file>
+    <file>icons/Command-Undo-48.png</file>
+    <file>icons/Media-Play-48.png</file>
+  </qresource>
+</RCC>

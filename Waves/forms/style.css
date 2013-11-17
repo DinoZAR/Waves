@@ -1,9 +1,11 @@
 
 /* Application-wide properties*/
 * {
-    background-color: #dcd8d1;
-    color: black;
+    background-color: #3f4543;
+    color: white;
     font-size: 12pt;
+    margin: 0px;
+    border: none;
 }
 
 QMenuBar {
@@ -16,25 +18,23 @@ QMenuBar {
     }
 
         QMenuBar::item:selected { /* when selected using mouse or keyboard */
-            background: #00caab;
+            background: #0094ff;
         }
 
         QMenuBar::item:pressed {
-            background: #00caab;
+            background: #0094ff;
         }
 
 QMenu {
-    margin: 0px; /* some spacing around the menu */
 }
 
     QMenu::item {
         padding: 12px 24px;
-        background: #00caab;
+        background: #0094ff;
     }
 
         QMenu::item:selected {
-            background: #1ef8ff;
-            color: black;
+            background: #6fc2ff;
         }
 
     QMenu::separator {
@@ -59,36 +59,141 @@ QPushButton {
     padding: 10px 20px;
 }
 
+    QPushButton:flat {
+        background-color: #3f4543;
+    }
+
     QPushButton:hover {
-        background-color: #00c8ff;
+        background-color: #535a57;
     }
 
     QPushButton:pressed {
-        background-color: #00de0b;
+        background-color: #0094ff;
     }
-
-QLineEdit {
-    background-color: #aaaaaa;
-    color: black;
-    border: none;
-    padding: 7px 10px;
-}
-
-QLineEdit:focus {
-    background-color: #0094ff;
-    color: white;
-}
 
 QSlider::groove:horizontal {
     border: none;
-    height: 2px; /* the groove expands to the size of the slider by default. by giving it a height, it has a fixed size */
-    background-color: #0094ff;
-    margin: 2px 0;
+    background-color: #535a57;
 }
 
 QSlider::handle:horizontal {
-    background-color: #00de0b;
+    background-color: #0094ff;
     width: 20px;
-    margin: -10px 0; /* handle is placed by default on the contents rect of the groove. Expand outside the groove */
-    border-radius: 3px;
 }
+
+    QSlider::handle:horizontal:hover {
+        background-color: #6fc2ff;
+        width: 20px;
+    }
+
+    QSlider::handle:horizontal:pressed {
+        background-color: #ff7500;
+        width: 20px;
+    }
+
+QRadioButton:hover {
+    background: #535a57;
+}
+
+QRadioButton:pressed {
+    background: #ff7500;
+}
+
+QRadioButton::indicator {
+    width: 32px;
+    height: 32px;
+    padding: 5px 10px;
+}
+
+    QRadioButton::indicator::unchecked {
+        image: url(forms/icons/check_empty.png);
+    }
+
+    QRadioButton::indicator:unchecked:hover {
+        image: url(forms/icons/check_empty.png);
+    }
+
+    QRadioButton::indicator:unchecked:pressed {
+        image: url(forms/icons/check_empty.png);
+    }
+
+    QRadioButton::indicator::checked {
+        image: url(forms/icons/check_full.png);
+    }
+
+    QRadioButton::indicator:checked:hover {
+        image: url(forms/icons/check_full.png);
+    }
+
+    QRadioButton::indicator:checked:pressed {
+        image: url(forms/icons/check_full.png);
+    }
+
+
+QCheckBox {
+    padding: 5px 10px;
+}
+
+    QCheckBox:hover {
+        background: #535a57;
+    }
+
+    QCheckBox:pressed {
+        background: #0094ff;
+    }
+
+    QCheckBox::indicator {
+        width: 24px;
+        height: 24px;
+    }
+
+        QCheckBox::indicator::unchecked {
+            image: url(forms/icons/check_empty.png);
+        }
+
+        QCheckBox::indicator:unchecked:hover {
+            image: url(forms/icons/check_empty.png);
+        }
+
+        QCheckBox::indicator:unchecked:pressed {
+            image: url(forms/icons/check_empty.png);
+        }
+
+        QCheckBox::indicator::checked {
+            image: url(forms/icons/check_full.png);
+        }
+
+        QCheckBox::indicator:checked:hover {
+            image: url(forms/icons/check_full.png);
+        }
+
+        QCheckBox::indicator:checked:pressed {
+            image: url(forms/icons/check_full.png);
+        }
+
+QTabWidget::pane {
+    border-top: 3px solid #535a57;
+}
+
+QTabWidget::tab-bar {
+}
+
+/* Style the tab using the tab sub-control. Note that
+     it reads QTabBar _not_ QTabWidget */
+QTabBar::tab {
+    background: #535a57;
+    min-width: 8ex;
+    padding: 5px 10px;
+}
+
+    QTabBar::tab:hover {
+        background: #6fc2ff;
+    }
+
+    QTabBar::tab:selected {
+        background: #0094ff;
+    }
+
+    QTabBar::tab:!selected {
+        margin-top: 5px; /* make non-selected tabs look smaller */
+    }

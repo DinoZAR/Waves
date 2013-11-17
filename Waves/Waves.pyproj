@@ -32,10 +32,17 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="forms\" />
+    <Folder Include="forms\icons\" />
     <Folder Include="gui\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="forms\icons\check_empty.png" />
+    <Content Include="forms\icons\check_full.png" />
+    <Content Include="forms\icons\Command-Redo-48.png" />
+    <Content Include="forms\icons\Command-Undo-48.png" />
+    <Content Include="forms\icons\Media-Play-48.png" />
     <Content Include="forms\main_window.ui" />
+    <Content Include="forms\resource.qrc" />
     <Content Include="forms\style.css" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" />
