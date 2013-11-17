@@ -1,12 +1,12 @@
 
 /* Application-wide properties*/
-* {
-    background-color: #3f4543;
-    color: white;
-    font-size: 12pt;
-    margin: 0px;
-    border: none;
-}
+    * {
+        background-color: #3f4543;
+        color: white;
+        font-size: 12pt;
+        margin: 0px;
+        border: none;
+    }
 
 QMenuBar {
 }
@@ -175,11 +175,10 @@ QTabWidget::pane {
     border-top: 3px solid #535a57;
 }
 
-QTabWidget::tab-bar {
+QTabWidget:movable {
+    background: #ff7500;
 }
 
-/* Style the tab using the tab sub-control. Note that
-     it reads QTabBar _not_ QTabWidget */
 QTabBar::tab {
     background: #535a57;
     min-width: 8ex;
@@ -190,10 +189,14 @@ QTabBar::tab {
         background: #6fc2ff;
     }
 
+    QTabBar::tab:movable {
+        background: #ff7500;
+    }
+
     QTabBar::tab:selected {
         background: #0094ff;
     }
 
     QTabBar::tab:!selected {
-        margin-top: 5px; /* make non-selected tabs look smaller */
+        margin-top: 5px;
     }

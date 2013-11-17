@@ -2,7 +2,7 @@
 
 # Form implementation generated from reading ui file 'C:\Users\Spencer\Documents\Projects\Waves\Waves\forms/main_window.ui'
 #
-# Created: Sat Nov 16 18:52:57 2013
+# Created: Sat Nov 16 19:06:48 2013
 #      by: pyside-uic 0.2.15 running on PySide 1.2.1
 #
 # WARNING! All changes made in this file will be lost!
@@ -38,6 +38,8 @@ class Ui_MainWindow(object):
         self.horizontalLayout.addWidget(self.horizontalSlider)
         self.verticalLayout.addLayout(self.horizontalLayout)
         self.tabWidget = QtGui.QTabWidget(self.centralwidget)
+        self.tabWidget.setTabsClosable(True)
+        self.tabWidget.setMovable(True)
         self.tabWidget.setObjectName("tabWidget")
         self.tab = QtGui.QWidget()
         self.tab.setObjectName("tab")
@@ -83,8 +85,10 @@ class Ui_MainWindow(object):
         self.actionRedo.setObjectName("actionRedo")
         self.menuFile.addAction(self.actionNew)
         self.menuFile.addAction(self.actionOpen)
+        self.menuFile.addSeparator()
         self.menuFile.addAction(self.actionSave)
         self.menuFile.addAction(self.actionSave_As)
+        self.menuFile.addSeparator()
         self.menuFile.addAction(self.actionQuit)
         self.menuHelp.addAction(self.actionManual)
         self.menuHelp.addAction(self.actionAbout)
