@@ -43,7 +43,6 @@
     <Content Include="forms\icons\Media-Play-48.png" />
     <Content Include="forms\main_window.ui" />
     <Content Include="forms\resource.qrc" />
-    <Content Include="forms\style.css" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" />
 </Project>

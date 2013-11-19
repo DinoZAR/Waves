@@ -1,5 +1,7 @@
 <RCC>
   <qresource prefix="/">
+    <file>icons/close-tab.png</file>
+    <file>icons/close-tab-hover.png</file>
     <file>icons/check_empty.png</file>
     <file>icons/check_full.png</file>
     <file>icons/Command-Redo-48.png</file>

@@ -9,9 +9,6 @@ if __name__ == '__main__':
     print 'Starting Waves!'
 
     app = QApplication(sys.argv)
-
-    with open(os.path.abspath('forms/style.css'), 'rb') as f:
-        app.setStyleSheet(unicode(f.read()))
     
     window = MainWindow()
     window.show()
