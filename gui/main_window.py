@@ -2,10 +2,9 @@ import os
 from PySide.QtGui import QMainWindow
 from forms.main_window_ui import Ui_MainWindow
 
-
 class MainWindow(QMainWindow):
     '''
-    Lots of neat things about this.
+    The main window that hosts the application.
     '''
 
     def __init__(self, parent=None):
