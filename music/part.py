@@ -18,3 +18,14 @@ class Part(object):
         
         # These events are specific to this part
         self.events = []
+    
+    def dump(self):
+        '''
+        Prints out the contents of this part
+        '''
+        out = 'Part: ' + self.label + '\n'
+        out += '________________________\n'
+        for e in self.events:
+            out += e.dump() + '\n'
+        out += '________________________\n'
+        return out
