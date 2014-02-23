@@ -16,3 +16,7 @@ class Score(object):
         self.title = 'Untitled'
         self.author = 'Unauthored'
         
+        self.parts = []
+        
+        # These events are global in scope
+        self.globalEvents = []
