@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "waves"
+version = "0.1.0"
+description = "Music composition software"
+authors = ["Spencer Graffe <sgraffe@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+Kivy = "^1.11.1"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.1.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
