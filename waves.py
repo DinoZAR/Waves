@@ -1,17 +1,8 @@
-import sys
-import os
+from kivy.app import App
+from kivy.uix.button import Button
 
-from PySide.QtGui import QApplication
+class WavesApp(App):
+    def build(self):
+        return Button(text='Hello World')
 
-from gui.main_window import MainWindow
-
-if __name__ == '__main__':
-    print 'Starting Waves!'
-
-    app = QApplication(sys.argv)
-    
-    window = MainWindow()
-    window.show()
-    app.exec_()
-
-    print 'Done!'
+WavesApp().run()
