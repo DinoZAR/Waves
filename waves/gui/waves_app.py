@@ -1,12 +1,8 @@
 from kivy.app import App
 from kivy.uix.button import Button
-from kivy.uix.boxlayout import BoxLayout
 
-
-class Interface(BoxLayout):
-    pass
+from waves.gui.score_editor import ScoreEditor
 
 
 class WavesApp(App):
-    def build(self):
-        return Interface()
+    pass

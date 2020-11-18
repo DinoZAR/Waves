@@ -31,3 +31,10 @@ def app_data(resource):
         appdata = os.path.expanduser(os.path.join("~", "." + _APPNAME))
 
     return os.path.join(appdata, resource)
+
+
+def print_stuff(stuff):
+    """
+    Used to debug that events are hooked up correctly.
+    """
+    print(stuff)

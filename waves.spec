@@ -3,7 +3,7 @@
 block_cipher = None
 
 
-a = Analysis(['waves.py'],
+a = Analysis(['main.py'],
              pathex=['/home/sgraffe/Documents/sources/waves'],
              binaries=[],
              datas=[],

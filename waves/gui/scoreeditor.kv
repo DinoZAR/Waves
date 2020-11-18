@@ -1,0 +1,9 @@
+#:kivy 1.11.1
+<ScoreEditor>:
+    txt_inpt: txt_inpt
+    Button:
+        id: f_but
+    TextInput:
+        id: txt_inpt
+        text: f_but.state
+        on_text: root.check_status(f_but)
