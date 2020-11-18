@@ -9,6 +9,7 @@
 
 from PySide import QtCore, QtGui
 
+
 class Ui_ScoreEditor(object):
     def setupUi(self, ScoreEditor):
         ScoreEditor.setObjectName("ScoreEditor")
@@ -24,7 +25,11 @@ class Ui_ScoreEditor(object):
         self.pushButton = QtGui.QPushButton(ScoreEditor)
         self.pushButton.setText("")
         icon = QtGui.QIcon()
-        icon.addPixmap(QtGui.QPixmap(":/icons/Media-Play-48.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon.addPixmap(
+            QtGui.QPixmap(":/icons/Media-Play-48.png"),
+            QtGui.QIcon.Normal,
+            QtGui.QIcon.Off,
+        )
         self.pushButton.setIcon(icon)
         self.pushButton.setIconSize(QtCore.QSize(32, 32))
         self.pushButton.setFlat(True)
@@ -45,6 +50,11 @@ class Ui_ScoreEditor(object):
         QtCore.QMetaObject.connectSlotsByName(ScoreEditor)
 
     def retranslateUi(self, ScoreEditor):
-        ScoreEditor.setWindowTitle(QtGui.QApplication.translate("ScoreEditor", "Score Editor", None, QtGui.QApplication.UnicodeUTF8))
+        ScoreEditor.setWindowTitle(
+            QtGui.QApplication.translate(
+                "ScoreEditor", "Score Editor", None, QtGui.QApplication.UnicodeUTF8
+            )
+        )
+
 
 import resource_rc
